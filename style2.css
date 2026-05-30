@@ -1,0 +1,334 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
+  background: #f1f5f9;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+#main-content {
+  margin-left: 240px !important;
+  float: none !important;
+  padding: 28px 32px !important;
+  width: calc(100% - 240px) !important;
+  min-height: 100vh;
+  background: #f1f5f9;
+  box-sizing: border-box;
+}
+
+/* --- Page Title --- */
+h1 {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  color: #1e293b;
+  text-align: center !important;
+  margin-bottom: 24px !important;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2e8f0;
+  letter-spacing: 0.04em;
+}
+
+/* ================================
+   STORE INFO CARD
+================================ */
+body > div > table:nth-of-type(1) {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  display: block;
+}
+
+body > div > table:nth-of-type(1) tr,
+body > div > table:nth-of-type(1) tbody {
+  display: block;
+}
+
+body > div > table:nth-of-type(1) tr td {
+  display: block;
+  padding: 2px 0;
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 400 !important;
+  border: none;
+}
+
+body > div > table:nth-of-type(1) tr:first-child td {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  color: #1e293b;
+  padding-bottom: 10px;
+}
+
+/* ================================
+   BILL TO + PAYMENT CARD
+================================ */
+body > div > table:nth-of-type(2) {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  display: block;
+  overflow: hidden;
+  padding-bottom: 16px;
+}
+
+body > div > table:nth-of-type(2) tbody {
+  display: block;
+}
+
+/* Bill TO header */
+body > div > table:nth-of-type(2) tr:first-child {
+  display: block;
+}
+
+body > div > table:nth-of-type(2) tr:first-child td {
+  background: #1e293b !important;
+  color: #ffffff !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 20px !important;
+  display: block;
+}
+
+/* Label + input rows — display as grid */
+body > div > table:nth-of-type(2) tr:not(:first-child) {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  align-items: center;
+  padding: 6px 20px;
+  gap: 12px;
+}
+
+body > div > table:nth-of-type(2) tr td:first-child {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+body > div > table:nth-of-type(2) tr td:last-child {
+  display: block;
+}
+
+body > div > table:nth-of-type(2) input[type="text"],
+body > div > table:nth-of-type(2) input[type="number"] {
+  width: 280px;
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #1e293b;
+  background: #f8fafc;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+body > div > table:nth-of-type(2) input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.1);
+  background: #fff;
+}
+
+/* Payment row */
+body > div > table:nth-of-type(2) strong {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 10px 20px 0;
+  display: inline-block;
+}
+
+body > div > table:nth-of-type(2) select {
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #1e293b;
+  background: #f8fafc;
+  margin: 8px 0 0 8px;
+  outline: none;
+  min-width: 200px;
+}
+
+/* ================================
+   ADD ITEMS ROW CARD
+================================ */
+body > div > table:nth-of-type(3) {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  display: block;
+}
+
+body > div > table:nth-of-type(3) tbody,
+body > div > table:nth-of-type(3) tr {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+body > div > table:nth-of-type(3) th {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0;
+  white-space: nowrap;
+  text-align: left;
+  border: none;
+  background: transparent;
+}
+
+body > div > table:nth-of-type(3) td {
+  padding: 0;
+  border: none;
+}
+
+body > div > table:nth-of-type(3) input {
+  height: 36px;
+  padding: 0 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #1e293b;
+  background: #f8fafc;
+  outline: none;
+  width: 120px;
+  transition: border-color 0.2s;
+}
+
+body > div > table:nth-of-type(3) input#txt_item_selection {
+  width: 180px;
+}
+
+body > div > table:nth-of-type(3) input#txt_qty {
+  width: 80px;
+}
+
+body > div > table:nth-of-type(3) input#txt_price,
+body > div > table:nth-of-type(3) input#txt_item_amount {
+  width: 100px;
+}
+
+body > div > table:nth-of-type(3) input#txt_brand_name {
+  width: 130px;
+}
+
+body > div > table:nth-of-type(3) input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.1);
+  background: #fff;
+}
+
+body > div > table:nth-of-type(3) input[readonly] {
+  background: #f1f5f9;
+  color: #94a3b8;
+}
+
+/* ================================
+   INVOICE TABLE CARD
+================================ */
+#txt_table {
+  width: 100%;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 12px !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+#txt_table thead {
+  background: #f8fafc;
+}
+
+#txt_table thead th {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 12px 18px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+
+#txt_table tbody tr td {
+  padding: 12px 18px;
+  font-size: 13px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* Total row */
+#txt_table tfoot tr:first-child th {
+  padding: 14px 18px;
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 500;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+#txt_table tfoot tr:first-child th:last-child {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* Generate Invoice button */
+#txt_table tfoot tr:last-child td {
+  padding: 16px 18px;
+  border-top: 1px solid #e2e8f0;
+  background: #f8fafc;
+  text-align: center !important;
+}
+
+button[onclick="generate_invoice()"] {
+  background: #4f46e5;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 28px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.02em;
+  transition: background 0.2s;
+}
+
+button[onclick="generate_invoice()"]:hover {
+  background: #4338ca;
+}
